@@ -28,7 +28,7 @@ const findById = id => {
   const user = users.find(d => d.id === id)
   return Promise.resolve(user)
 }
-
+ 
 const insert = ({ name, bio }) => {
   // INSERT INTO users (name, bio) VALUES ('foo', 'bar');
   const newUser = { id: getId(), name, bio }
